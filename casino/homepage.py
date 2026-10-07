@@ -9,16 +9,6 @@ from casino.config import Config
 from casino.types import GameContext
 from casino.utils import clear_screen
 
-GAME_HANDLERS = {
-    "blackjack (U.S.)": games.blackjack.play_blackjack,
-    "blackjack (EU)": games.blackjack.play_european_blackjack,
-    "poker": games.poker.play_poker,
-    "roulette": games.roulette.play_roulette,
-    "slots": games.slots.play_slots,
-    "slots (expanded)": games.slots.play_slots_expanded,
-    "uno": games.uno.play_uno,
-}
-
 class CasinoHomepage(App):
     # Basic header
     CSS = """
